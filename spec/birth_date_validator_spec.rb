@@ -1,7 +1,7 @@
 require './spec_helper'
 
 describe BirthDateValidator do
-  describe 'user has to have almost 18 years' do
+  describe 'user has to have at least 18 years' do
     context '19 years old' do
       it 'is valid' do
         expect(TestUserOverAge.new(birth_date: 19.years.ago)).to be_valid

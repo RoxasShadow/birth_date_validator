@@ -10,8 +10,8 @@
 
 class BirthDateValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    invalid = if options[:almost].present?
-      value.year > options[:almost].year
+    invalid = if options[:at_least].present?
+      value.year > options[:at_least].year
     elsif options[:less_then].present?
       value.year <= options[:less_then].year
     elsif options[:range].present?

@@ -16,7 +16,7 @@ class TestModel
 end
 
 class TestUserOverAge < TestModel
-  validates :birth_date, birth_date: { almost: 18.years.ago, message: 'come back when you will be older' }
+  validates :birth_date, birth_date: { at_least: 18.years.ago, message: 'come back when you will be older' }
 end
 
 class TestUserUnderAge < TestModel
