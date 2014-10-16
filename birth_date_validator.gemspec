@@ -7,7 +7,7 @@ Gem::Specification.new { |s|
   s.email         = 'webmaster@giovannicapuano.net'
   s.homepage      = 'https://github.com/RoxasShadow'
   s.summary       = 'Birth date validator for ActiveModel.'
-  s.description   = 'Set through various parameters the minimum or the range of ages in which your users have to be.'
+  s.description   = 'Minimal birth date validator to check if the user has the right age to sign in the website.'
   s.licenses      = 'WTFPL'
 
   s.require_paths = ['lib']
