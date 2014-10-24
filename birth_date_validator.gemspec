@@ -14,8 +14,8 @@ Gem::Specification.new { |s|
   s.files         = Dir.glob('lib/**/*.rb')
   s.test_files    = Dir.glob('spec/**/*.rb')
 
-  s.add_runtime_dependency 'activemodel', '~> 4.1'
-  s.add_runtime_dependency 'activesupport', '~> 4.1'
+  s.add_runtime_dependency 'activemodel', '~> 4.0'
+  s.add_runtime_dependency 'activesupport', '~> 4.0'
 
   s.add_development_dependency 'rake', '~> 0'
   s.add_development_dependency 'rspec', '~> 0'
