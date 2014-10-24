@@ -13,7 +13,7 @@ Then add the following one to your model:
 ```ruby
 validates :birth_date, birth_date: { at_least: 18.years.ago, message: 'come back when you will be older' }
 validates :birth_date, birth_date: { less_then: 18.years.ago }
-validates :birth_date, birth_date: { range: 18.years.ago..30.years.old }
+validates :birth_date, birth_date: { range: 18.years.ago..30.years.ago }
 BirthDateValidator.valid?(Date.parse('1995/01/24'), at_least: 18.years.ago)
 ```
 
