@@ -65,4 +65,10 @@ describe BirthDateValidator do
       end
     end
   end
+
+  describe 'user has a birth date that is a not valid date' do
+    it 'is not valid' do
+      expect(TestUserRange.new(birth_date: 'lol')).to_not be_valid
+    end
+  end
 end

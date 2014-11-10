@@ -24,6 +24,8 @@ class BirthDateValidator < ActiveModel::EachValidator
       elsif options[:range].present?
         age_to_validate >= age(options[:range].first) && age_to_validate <= age(options[:range].last)
       end
+    rescue
+      false
     end
 
   private
